@@ -1,44 +1,47 @@
 <!DOCTYPE html>
-<html>
- <head>
-  <meta charset="utf-8">
-  <title>Батарейка</title>
-  <style>
-   .b {
-    width: 150px;
-    height: 50px;
-    border: 4px solid #000;
-    margin-bottom: 10px;
-    position: relative;
-   }
-   .b::before, .b::after {
-    content: '';
-    position: absolute;
-   }
-   .b::after {
-    width: 10px;
-    height: 20px;
-    background: #000;
-    right: -10px; top: 15px;
-   }
-   .b::before { height: 100%; }
-   .low::before {
-    width: 33%;
-    background: #ED1C24;
-   }
-   .medium::before {
-    width: 66%;
-    background: #FFC60B;
-   }
-   .high::before {
-    width: 100%;
-    background: #00A055;
-   }
-  </style>
- </head>
- <body>
-  <div class="b low"></div>
-  <div class="b medium"></div>
-  <div class="b high"></div>
- </body>
+<html lang="en-RU">
+<head>
+    <meta charset="UTF-8">
+    <title>MyShop</title>
+    <style>
+    .background_plane {
+        background-image: url(plane_2.jpg);/*добавляем фоновую картинку*/
+        background-repeat: no-repeat; /*делаем так чтобы при просмотре она не повторялась*/
+        background-attachment: fixed;/*при уменьшении окна картинка растягивается */
+        background-size: cover; /*на весь размер страницы*/
+        }
+    .main_text {
+        color: black;
+        text-align: center;
+        }
+    .box-model{
+        /*margin-left: auto;*/
+        /*margin-right: auto;*/
+        margin-top: 25%;
+        margin-bottom: 10%;
+        margin-left: 35%;
+        margin-right: 35%;
+        width: 30%;
+        background: rgba(0,0,0,0.5);
+    }
+
+    </style>
+</head>
+
+<body class = "background_plane">
+    <div class="box-model">
+            <h1 class="main_text">
+                Авиабилеты в Грузию
+            </h1>
+            <p class="main_text">
+                Купи билет на самолет сейчас
+            </p>
+            <form class="main_text">
+                <button>
+                    Купить сейчас!
+                </button>
+            </form>
+    </div>
+
+</body>
 </html>
