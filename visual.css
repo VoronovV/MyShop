@@ -1,0 +1,68 @@
+
+.all_screen{
+    display: table;
+    width: 100vw;
+    height: 100vh; 
+}
+
+
+.background_plane {
+     
+    margin:0;
+    background-image: url(plane_3.png);
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-size: cover; 
+
+    }
+
+.main_text {
+    font-family: 'Ubuntu';
+    color: #FFFFFF;
+    text-align: center;
+    }
+
+.main_text p {
+    margin-bottom: 5%;
+    font-weight: medium;
+    margin-top: 0;
+    font-size: 3vw;
+    line-height: 40px;
+}
+
+.main_text h1 {
+    font-weight: bold;
+    margin-bottom: 3%;
+    margin-top: 10%;
+    font-size: 5vw;
+}
+
+.box-model{    
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 29%;
+
+    width: 45%;
+    height: 30%;
+     
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 50px;
+}
+
+.main_text button{
+    font-family: 'Ubuntu';
+    text-align: center;
+    font-size: 100%;
+    border-radius: 12px;
+    padding: 3% 8%;
+    border: 0;
+    margin-bottom: 3%;
+    cursor: pointer;
+}
+
+.main_text button:hover
+{
+    opacity: 0.8;
+}
